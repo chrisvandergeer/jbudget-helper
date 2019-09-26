@@ -18,7 +18,7 @@ public class CsvLine {
     }
 
     public String getValue(String header) {
-        return line.get(header);
+        return line.get(header).trim();
     }
 
     public BigDecimal getAmountValue(String fieldName) {

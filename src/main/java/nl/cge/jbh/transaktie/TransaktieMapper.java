@@ -14,6 +14,9 @@ public class TransaktieMapper {
         transaktie.setBedrag(csvLine.getAmountValue("Bedrag"));
         transaktie.setTegenrekening(csvLine.getValue("Tegenrekening IBAN/BBAN"));
         transaktie.setNaamTegenpartij(csvLine.getValue("Naam tegenpartij"));
+        transaktie.setOmschrijving1(csvLine.getValue("Omschrijving-1"));
+        transaktie.setOmschrijving2(csvLine.getValue("Omschrijving-2"));
+        transaktie.setOmschrijving3(csvLine.getValue("Omschrijving-3"));
         return transaktie;
     }
 

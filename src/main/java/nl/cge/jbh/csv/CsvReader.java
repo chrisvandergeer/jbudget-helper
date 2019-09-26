@@ -13,12 +13,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CsvLoader {
+public class CsvReader {
 
     private List<String> headers;
     private List<List<String>> lines = new ArrayList<>();
 
-    public CsvLoader load(String fileName) {
+    public CsvReader load(String fileName) {
         Path filePath = Paths.get(fileName);
         try {
             readHeaders(filePath);
